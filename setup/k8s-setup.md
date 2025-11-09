@@ -40,7 +40,8 @@ kubectl cluster-info
 kubectl get nodes
 ```
 
-### Configure Docker to Use Minikube's Docker Daemon
+- Configure Docker to Use Minikube's Docker Daemon
+
 ```bash
 # This allows us to build images directly in Minikube
 # configures your terminal to point to Minikube's Docker daemon instead of Docker Desktop

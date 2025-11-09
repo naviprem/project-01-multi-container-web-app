@@ -186,7 +186,6 @@ docker buildx build --platform linux/amd64 -t $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGIO
 
 ```
 
-
 - Push Images to ECR
 
 ```bash
@@ -433,7 +432,7 @@ kubectl get deployment backend
 ```
 
 - Test Rolling Updates
-- 
+  
 ```bash
 # Update backend image (simulate new version)
 kubectl set image deployment/backend backend=$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/todo-backend:latest
@@ -449,6 +448,7 @@ kubectl rollout history deployment/backend
 ```
 
 - Check EKS Dashboard (AWS Console)
+
 ```bash
 # Get EKS console URL
 echo "https://console.aws.amazon.com/eks/home?region=$AWS_REGION#/clusters/todo-cluster"
