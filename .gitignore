@@ -85,3 +85,5 @@ credentials/
 test-results/
 .cache/
 .ig/
+k8s-eks/
+blog-post-concise.md
